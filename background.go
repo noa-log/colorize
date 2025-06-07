@@ -14,7 +14,7 @@ package colorize
  * @return {string} formatted text with black background
  */
 func BlackBackground(Text string) string {
-	return Set(Text, ConfigDefault, BackgroundBlack, DEFAULT_TEXT)
+	return Set(Text, DEFAULT_CONFIG, BackgroundBlack, DEFAULT_TEXT)
 }
 
 /**
@@ -23,7 +23,7 @@ func BlackBackground(Text string) string {
  * @return {string} formatted text with black background
  */
 func RedBackground(Text string) string {
-	return Set(Text, ConfigDefault, BackgroundRed, DEFAULT_TEXT)
+	return Set(Text, DEFAULT_CONFIG, BackgroundRed, DEFAULT_TEXT)
 }
 
 /**
@@ -32,7 +32,7 @@ func RedBackground(Text string) string {
  * @return {string} formatted text with black background
  */
 func GreenBackground(Text string) string {
-	return Set(Text, ConfigDefault, BackgroundGreen, DEFAULT_TEXT)
+	return Set(Text, DEFAULT_CONFIG, BackgroundGreen, DEFAULT_TEXT)
 }
 
 /**
@@ -41,7 +41,7 @@ func GreenBackground(Text string) string {
  * @return {string} formatted text with black background
  */
 func YellowBackground(Text string) string {
-	return Set(Text, ConfigDefault, BackgroundYellow, DEFAULT_TEXT)
+	return Set(Text, DEFAULT_CONFIG, BackgroundYellow, DEFAULT_TEXT)
 }
 
 /**
@@ -50,7 +50,7 @@ func YellowBackground(Text string) string {
  * @return {string} formatted text with black background
  */
 func BlueBackground(Text string) string {
-	return Set(Text, ConfigDefault, BackgroundBlue, DEFAULT_TEXT)
+	return Set(Text, DEFAULT_CONFIG, BackgroundBlue, DEFAULT_TEXT)
 }
 
 /**
@@ -59,7 +59,7 @@ func BlueBackground(Text string) string {
  * @return {string} formatted text with black background
  */
 func MagentaBackground(Text string) string {
-	return Set(Text, ConfigDefault, BackgroundMagenta, DEFAULT_TEXT)
+	return Set(Text, DEFAULT_CONFIG, BackgroundMagenta, DEFAULT_TEXT)
 }
 
 /**
@@ -68,7 +68,7 @@ func MagentaBackground(Text string) string {
  * @return {string} formatted text with black background
  */
 func CyanBackground(Text string) string {
-	return Set(Text, ConfigDefault, BackgroundCyan, DEFAULT_TEXT)
+	return Set(Text, DEFAULT_CONFIG, BackgroundCyan, DEFAULT_TEXT)
 }
 
 /**
@@ -77,5 +77,5 @@ func CyanBackground(Text string) string {
  * @return {string} formatted text with black background
  */
 func WhiteBackground(Text string) string {
-	return Set(Text, ConfigDefault, BackgroundWhite, DEFAULT_TEXT)
+	return Set(Text, DEFAULT_CONFIG, BackgroundWhite, DEFAULT_TEXT)
 }
