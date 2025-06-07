@@ -1,7 +1,7 @@
 /*
  * @Author: nijineko
  * @Date: 2025-06-07 10:44:04
- * @LastEditTime: 2025-06-07 11:10:12
+ * @LastEditTime: 2025-06-07 11:40:58
  * @LastEditors: nijineko
  * @Description: define color constants
  * @FilePath: \colorize\color.go
@@ -17,13 +17,14 @@ const (
 
 // define color constants
 const (
-	ConfigDefault   = iota // Default configuration
-	ConfigBold             // Bold text
-	ConfigItalic           // Italic text
-	ConfigUnderline        // Underlined text
-	ConfigBlinking         // Blinking text
-	ConfigReverse          // Reversed colors
-	ConfigHidden           // Hidden text
+	ConfigDefault   = iota     // Default configuration
+	ConfigBold                 // Bold text
+	ConfigDim                  // Dim text
+	ConfigItalic               // Italic text
+	ConfigUnderline            // Underlined text
+	ConfigBlinking             // Blinking text
+	ConfigReverse   = iota + 1 // Reversed colors
+	ConfigHidden               // Hidden text
 )
 
 // define background color constants
