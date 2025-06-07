@@ -1,12 +1,19 @@
 /*
  * @Author: nijineko
  * @Date: 2025-06-07 10:44:04
- * @LastEditTime: 2025-06-07 10:56:01
+ * @LastEditTime: 2025-06-07 11:10:12
  * @LastEditors: nijineko
  * @Description: define color constants
  * @FilePath: \colorize\color.go
  */
 package colorize
+
+// define default constants
+const (
+	DEFAULT_CONFIG     = 0         // Default configuration
+	DEFAULT_BACKGROUND = 0         // Default background color
+	DEFAULT_TEXT       = TextWhite // Default text color
+)
 
 // define color constants
 const (
