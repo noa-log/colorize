@@ -1,10 +1,10 @@
 /*
  * @Author: nijineko
  * @Date: 2025-06-07 11:13:20
- * @LastEditTime: 2025-06-07 11:13:26
+ * @LastEditTime: 2025-06-08 11:59:11
  * @LastEditors: nijineko
  * @Description: quick method for set background color
- * @FilePath: \colorize\background.go
+ * @FilePath: \colorize\background_test.go
  */
 package colorize
 
@@ -231,6 +231,230 @@ func TestWhiteBackground(t *testing.T) {
 				t.Errorf("WhiteBackground() = %v, want %v", got, tt.want)
 			} else {
 				t.Log("WhiteBackground() = ", got)
+			}
+		})
+	}
+}
+
+func TestGrayBackground(t *testing.T) {
+	type args struct {
+		Text string
+	}
+	tests := []struct {
+		name string
+		args args
+		want string
+	}{
+		{
+			name: "Gray background",
+			args: args{
+				Text: "Hello, Noa!",
+			},
+			want: "\x1b[0;100;37mHello, Noa!\x1b[0m",
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := GrayBackground(tt.args.Text); got != tt.want {
+				t.Errorf("GrayBackground() = %v, want %v", got, tt.want)
+			} else {
+				t.Log("GrayBackground() = ", got)
+			}
+		})
+	}
+}
+
+func TestBrightRedBackground(t *testing.T) {
+	type args struct {
+		Text string
+	}
+	tests := []struct {
+		name string
+		args args
+		want string
+	}{
+		{
+			name: "Bright Red background",
+			args: args{
+				Text: "Hello, Noa!",
+			},
+			want: "\x1b[0;101;37mHello, Noa!\x1b[0m",
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := BrightRedBackground(tt.args.Text); got != tt.want {
+				t.Errorf("BrightRedBackground() = %v, want %v", got, tt.want)
+			} else {
+				t.Log("BrightRedBackground() = ", got)
+			}
+		})
+	}
+}
+
+func TestBrightGreenBackground(t *testing.T) {
+	type args struct {
+		Text string
+	}
+	tests := []struct {
+		name string
+		args args
+		want string
+	}{
+		{
+			name: "Bright Green background",
+			args: args{
+				Text: "Hello, Noa!",
+			},
+			want: "\x1b[0;102;37mHello, Noa!\x1b[0m",
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := BrightGreenBackground(tt.args.Text); got != tt.want {
+				t.Errorf("BrightGreenBackground() = %v, want %v", got, tt.want)
+			} else {
+				t.Log("BrightGreenBackground() = ", got)
+			}
+		})
+	}
+}
+
+func TestBrightYellowBackground(t *testing.T) {
+	type args struct {
+		Text string
+	}
+	tests := []struct {
+		name string
+		args args
+		want string
+	}{
+		{
+			name: "Bright Yellow background",
+			args: args{
+				Text: "Hello, Noa!",
+			},
+			want: "\x1b[0;103;37mHello, Noa!\x1b[0m",
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := BrightYellowBackground(tt.args.Text); got != tt.want {
+				t.Errorf("BrightYellowBackground() = %v, want %v", got, tt.want)
+			} else {
+				t.Log("BrightYellowBackground() = ", got)
+			}
+		})
+	}
+}
+
+func TestBrightBlueBackground(t *testing.T) {
+	type args struct {
+		Text string
+	}
+	tests := []struct {
+		name string
+		args args
+		want string
+	}{
+		{
+			name: "Bright Blue background",
+			args: args{
+				Text: "Hello, Noa!",
+			},
+			want: "\x1b[0;104;37mHello, Noa!\x1b[0m",
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := BrightBlueBackground(tt.args.Text); got != tt.want {
+				t.Errorf("BrightBlueBackground() = %v, want %v", got, tt.want)
+			} else {
+				t.Log("BrightBlueBackground() = ", got)
+			}
+		})
+	}
+}
+
+func TestBrightMagentaBackground(t *testing.T) {
+	type args struct {
+		Text string
+	}
+	tests := []struct {
+		name string
+		args args
+		want string
+	}{
+		{
+			name: "Bright Magenta background",
+			args: args{
+				Text: "Hello, Noa!",
+			},
+			want: "\x1b[0;105;37mHello, Noa!\x1b[0m",
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := BrightMagentaBackground(tt.args.Text); got != tt.want {
+				t.Errorf("BrightMagentaBackground() = %v, want %v", got, tt.want)
+			} else {
+				t.Log("BrightMagentaBackground() = ", got)
+			}
+		})
+	}
+}
+
+func TestBrightCyanBackground(t *testing.T) {
+	type args struct {
+		Text string
+	}
+	tests := []struct {
+		name string
+		args args
+		want string
+	}{
+		{
+			name: "Bright Cyan background",
+			args: args{
+				Text: "Hello, Noa!",
+			},
+			want: "\x1b[0;106;37mHello, Noa!\x1b[0m",
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := BrightCyanBackground(tt.args.Text); got != tt.want {
+				t.Errorf("BrightCyanBackground() = %v, want %v", got, tt.want)
+			} else {
+				t.Log("BrightCyanBackground() = ", got)
+			}
+		})
+	}
+}
+
+func TestBrightWhiteBackground(t *testing.T) {
+	type args struct {
+		Text string
+	}
+	tests := []struct {
+		name string
+		args args
+		want string
+	}{
+		{
+			name: "Bright White background",
+			args: args{
+				Text: "Hello, Noa!",
+			},
+			want: "\x1b[0;107;37mHello, Noa!\x1b[0m",
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := BrightWhiteBackground(tt.args.Text); got != tt.want {
+				t.Errorf("BrightWhiteBackground() = %v, want %v", got, tt.want)
+			} else {
+				t.Log("BrightWhiteBackground() = ", got)
 			}
 		})
 	}

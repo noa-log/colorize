@@ -79,3 +79,75 @@ func CyanBackground(Text string) string {
 func WhiteBackground(Text string) string {
 	return Set(Text, DEFAULT_CONFIG, BackgroundWhite, DEFAULT_TEXT)
 }
+
+/**
+ * @description: Set background color to gray
+ * @param {string} Text
+ * @return {string} formatted text with black background
+ */
+func GrayBackground(Text string) string {
+	return Set(Text, DEFAULT_CONFIG, BackgroundGray, DEFAULT_TEXT)
+}
+
+/**
+ * @description: Set background color to bright red
+ * @param {string} Text
+ * @return {string} formatted text with black background
+ */
+func BrightRedBackground(Text string) string {
+	return Set(Text, DEFAULT_CONFIG, BackgroundBrightRed, DEFAULT_TEXT)
+}
+
+/**
+ * @description: Set background color to bright green
+ * @param {string} Text
+ * @return {string} formatted text with black background
+ */
+func BrightGreenBackground(Text string) string {
+	return Set(Text, DEFAULT_CONFIG, BackgroundBrightGreen, DEFAULT_TEXT)
+}
+
+/**
+ * @description: Set background color to bright yellow
+ * @param {string} Text
+ * @return {string} formatted text with black background
+ */
+func BrightYellowBackground(Text string) string {
+	return Set(Text, DEFAULT_CONFIG, BackgroundBrightYellow, DEFAULT_TEXT)
+}
+
+/**
+ * @description: Set background color to bright blue
+ * @param {string} Text
+ * @return {string} formatted text with black background
+ */
+func BrightBlueBackground(Text string) string {
+	return Set(Text, DEFAULT_CONFIG, BackgroundBrightBlue, DEFAULT_TEXT)
+}
+
+/**
+ * @description: Set background color to bright magenta
+ * @param {string} Text
+ * @return {string} formatted text with black background
+ */
+func BrightMagentaBackground(Text string) string {
+	return Set(Text, DEFAULT_CONFIG, BackgroundBrightMagenta, DEFAULT_TEXT)
+}
+
+/**
+ * @description: Set background color to bright cyan
+ * @param {string} Text
+ * @return {string} formatted text with black background
+ */
+func BrightCyanBackground(Text string) string {
+	return Set(Text, DEFAULT_CONFIG, BackgroundBrightCyan, DEFAULT_TEXT)
+}
+
+/**
+ * @description: Set background color to bright white
+ * @param {string} Text
+ * @return {string} formatted text with black background
+ */
+func BrightWhiteBackground(Text string) string {
+	return Set(Text, DEFAULT_CONFIG, BackgroundBrightWhite, DEFAULT_TEXT)
+}
